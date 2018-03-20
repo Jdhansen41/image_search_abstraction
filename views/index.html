@@ -1,0 +1,70 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image Search Abstraction Layer
+      </h1>
+      <h3>
+        Created By Josh Hansen
+      </h3>
+      <div style="width: 100%; text-align: center;">
+        <img id="logo" src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/20170926_bing_logo_2.jpg">
+      </div>
+      
+    </header>
+  <main style="margin-top: 50px; box-shadow: 0px 0px 10px gray; padding: 20px;">
+      <p>
+        Welcome! This Node.js app utilizes the Bing Search API and node-bing-api package to return json data from get requests made by users. Recent searches are stored in a mongoDB database hosted on mlab.com. Pagination is also
+        supported.
+    </p>
+    <p>
+      Search Url Example:
+    </p>
+    <p class="urls">
+      https://striped-vegetarian.glitch.me/api/imagesearch/tacos?offset=2  ----   offset parameter optional
+    </p>
+    <p>
+      Url to See Previous Searches:
+    </p>
+    <p class="urls">
+      https://striped-vegetarian.glitch.me/api/recentsearches
+    </p>
+    <p>
+      Type in a URL above to see how it works!
+    </p>
+    </main>
+  
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
