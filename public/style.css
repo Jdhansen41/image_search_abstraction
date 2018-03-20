@@ -10,9 +10,10 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 1000px;
+  padding: 20px;
 }
 
 h1, h3 {
@@ -21,7 +22,8 @@ h1, h3 {
   text-align: center;
 }
 h1{
-  color: blue;
+  color: 	#008080;
+  font-size: 40px;
 }
 
 h3{
@@ -38,7 +40,7 @@ main{
 }
 
 .urls{
- color: gray;
+  opacity: 0.6;
   margin-left: 50px;
   margin-bottom: 50px;
 }
@@ -51,7 +53,7 @@ footer {
 }
 
 footer > a {
-  color: #BBBBBB;
+  color: 	#008080;
 }
 #logo{
   width: 200px;

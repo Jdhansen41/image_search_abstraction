@@ -24,7 +24,7 @@ app.get("/", (req,res,next)=>{
 })
 
 //Get all search terms from the database
-app.get("/api/recentsearchs", (req,res,next)=>{
+app.get("/api/recentsearches", (req,res,next)=>{
   searchTerm.find({}, (err, data)=>{
   res.json(data)
   })
