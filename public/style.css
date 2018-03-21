@@ -9,11 +9,12 @@
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
   margin: 0 auto;
   min-width: 400px;
   max-width: 1000px;
   padding: 20px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h3 {
@@ -31,7 +32,13 @@ h3{
   margin-bottom: 50px;
 }
 main{
- margin: 0 auto; 
+  margin: 0 auto; 
+  margin-top: 50px; 
+  box-shadow: 0px 0px 10px gray; 
+  padding: 20px; 
+  background: #e8ffec; 
+  color: black;
+  border-radius: 5px;
 }
 
 
